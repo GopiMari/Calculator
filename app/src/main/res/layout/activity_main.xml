@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/edis"
+        android:layout_width="match_parent"
+
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/efield"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edis"
+    android:columnCount="3"
+
+       >
+
+        <Button
+            android:id="@+id/enine"
+            android:onClick="Numberfield"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/eeight"
+            android:onClick="Numberfield"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/eseven"
+            android:onClick="Numberfield"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/esix"
+            android:onClick="Numberfield"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/efive"
+            android:onClick="Numberfield"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/efour"
+            android:onClick="Numberfield"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/ethree"
+            android:onClick="Numberfield"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/etwo"
+            android:onClick="Numberfield"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/eone"
+            android:onClick="Numberfield"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/eclear"
+            android:onClick="Reset"
+            android:text="Clear" />
+
+
+
+        <Button
+            android:id="@+id/ezero"
+            android:onClick="Numberfield"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/eequal"
+            android:onClick="Numberfield"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/edot"
+            android:text="."
+            android:onClick="dotfn"/>
+
+
+
+
+
+
+
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/efield"
+        android:layout_below="@id/edis">
+
+        <Button
+            android:id="@+id/eadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="operatorclick"/>
+
+        <Button
+            android:id="@+id/esub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="operatorclick"/>
+
+        <Button
+            android:id="@+id/emul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:onClick="operatorclick"/>
+
+        <Button
+            android:id="@+id/ediv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="operatorclick"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
